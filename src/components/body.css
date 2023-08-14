@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.modal-wrapper{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(189,189,189,0.9);
+}
+.modal-container{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    background-color: white;
+}
+.modal-container h2{
+    margin-bottom: 1rem;
+    font-size: 34px;
+}
+.modal-container p{
+    margin-bottom: 1rem;
+    font-size: 20px;
+}
+.body{
+    width: 100%;
+    height: 88vh;
+    background-color: whitesmoke;
+    display: flex;
+}
+.body .content{
+    /* background-color: aqua; */
+    padding: 0.5rem 1rem;
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+.body .content h1{
+    color: gray;
+}
+.content .img{
+    height: 50%;
+    width: 100%;
+    display: flex;
+}
+.content .img .img1{
+    height: 100%;
+    width: 50%;
+    background-image: url('../images/car4.png');
+}
+.content .img .img2{
+    height: 100%;
+    width: 50%;
+    background-image: url('../images/car5bg.png');
+    background-repeat: no-repeat;
+}
+.form-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+form{
+    height: 85vh;
+    width: 50vw;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: flex;
+}
+.form .left,.form .right{
+    width: 50%;
+    padding: 1.8rem 0.8rem;
+    background-color: rgb(252, 252, 252);
+}
+#el{
+    display: flex;
+    flex-direction: column;
+}
+input[type=text],input[type=number]{
+    width: 100%;
+    padding: 0.7rem 1.2rem;
+    border-radius: 0.2rem;
+    font-size: 14px;
+    margin: 0.5rem 0;
+    border: 1px solid #ccc;
+}
+select{
+    width: 100%;
+    padding: 0.7rem 1.2rem;
+    border-radius: 0.2rem;
+    font-size: 14px;
+    margin: 0.5rem 0;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+input[type=date]{
+    width: 100%;
+    padding: 0.7rem 1.2rem;
+    border-radius: 0.2rem;
+    font-size: 14px;
+    margin: 0.5rem 0;
+    border: 1px solid #ccc;
+    cursor:text;
+}
+button{
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.9rem 1.2rem;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
